@@ -5,6 +5,10 @@ import org.openqa.selenium.support.FindBy;
 
 public class HotelBookingPage extends PagesInitialization {
 	
+	/*
+	 * Define a unique element of a page, useful to verify that the user is on HotelBookingPage
+	 */
+	
 	@FindBy(xpath = "//*[@id='ROOMS']/div/button")
 	public WebElement bookNowBtnElm;
 	

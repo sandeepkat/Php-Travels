@@ -9,8 +9,7 @@ import utils.Browser;
 public class HomePage extends PagesInitialization{
 	
 	/*
-	 * Define a unique element of a page, useful to verify that the user is one
-	 * login page
+	 * Define a unique element of a page, useful to verify that the user is on Home page
 	 */
 
 	public void navigateToHomePage() {
@@ -19,8 +18,6 @@ public class HomePage extends PagesInitialization{
 
 	@FindBy(css = "h3.RTL")
 	public WebElement userNameElm;
-		
-	// Main tab options in user dashboard
 	
 	@FindBy(css = "div.collapse.navbar-collapse > ul.nav.navbar-nav.go-right > li:nth-child(1) > a")
 	public WebElement hotelsTabOptionElm;

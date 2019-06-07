@@ -2,6 +2,11 @@ package utils;
 
 public class Global {
 
+	/*
+	 * Initialization of all php travels projects global variables
+	 * 
+	 */
+
 	public static final String CHROME = "Chrome";
 	public static final String FIREFOX = "Firefox";
 	public static final String INTERNET_EXPLORER = "InternetExplorer";

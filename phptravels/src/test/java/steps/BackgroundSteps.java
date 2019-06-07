@@ -15,11 +15,6 @@ public class BackgroundSteps {
 		HomePage homePage = new HomePage();
 		LoginPage loginPage = new LoginPage();
 		
-//		try {
-//			if(!homePage.searchFilterDropDown.isDisplayed()) {
-//			} 
-//			return;
-		
 		// Check for Logout or signup button	
 		try {
 				if (homePage.myAccountBtnElm.isDisplayed()) {
@@ -42,6 +37,7 @@ public class BackgroundSteps {
 		if (homePage.myAccountBtnElm.isDisplayed()) {
 				homePage.myAccountBtnElm.click();
 		}
+		
 		// Check for Logout or signup button	
 		try {
 			if (homePage.myAccountLogoutBtnElm.isDisplayed()) {
@@ -54,20 +50,3 @@ public class BackgroundSteps {
 		} 
 } 
 		
-		
-//		try {
-//			if( homePage.searchFilterDropDown.isDisplayed() || homePage.bookingBtnElm.isDisplayed() || loginPage.emailIdElm.isDisplayed()){
-//				if (homePage.searchFilterDropDown.isDisplayed()) {
-//					homePage.myAccountBtnElm.click();
-//					homePage.myAccountLogoutBtnElm.click();	
-//				}else if (homePage.bookingBtnElm.isDisplayed()) {
-//					homePage.myAccountBtnElm.click();
-//					homePage.myAccountLogoutBtnElm.click();	
-//				}else if (loginPage.emailIdElm.isDisplayed()) {
-//					//Do nothing
-//				}else
-//					System.out.println("NOT IN ACCOUNT OR LOGIN PAGE");
-//			} 
-//			return;
-//		} catch (NoSuchElementException ex) {	
-//			

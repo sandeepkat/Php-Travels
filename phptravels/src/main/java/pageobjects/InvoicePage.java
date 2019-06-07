@@ -4,6 +4,10 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
 public class InvoicePage extends PagesInitialization{
+	
+	/*
+	 * Define a unique element of a page, useful to verify that the user is on InvoicePage
+	 */
 
 	@FindBy(xpath = "//*[@id='body-section']/div[1]/div[2]/div[2]/center/button[2]")
 	public WebElement payNowBtnElm;

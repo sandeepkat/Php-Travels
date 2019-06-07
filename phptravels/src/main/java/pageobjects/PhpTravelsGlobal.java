@@ -1,6 +1,11 @@
 package pageobjects;
 
 public class PhpTravelsGlobal {
+	
+	/*
+	 * Initialization of all php travels projects local variables
+	 * 
+	 */
 
 	public static final String PHP_TRAVELS_LANDING_URL = "http://www.phptravels.net/";
 	public static final String PHP_TRAVELS_LOGIN_URL = ""+ PHP_TRAVELS_LANDING_URL + "login";

@@ -15,7 +15,7 @@ public class LoginPageValidInvalidPasswordTestSteps {
 	
 	 @Given("^user is landed on Login Page$")
 	 public void user_is_landed_on_login_page()  throws TimeoutException {
-			 login.navigateToLoginPage();	 
+		 login.navigateToLoginPage();	 
 	 }
 	
 	 @When("^user enters valid username and invalid password on login page$")
@@ -27,12 +27,12 @@ public class LoginPageValidInvalidPasswordTestSteps {
 	 
 	 @When("^the user clicks sign in or login button$")
 	 public void user_clicks_sign_in_or_login_button() throws TimeoutException {
-	 login.logInButtonElm.click();
+		 login.logInButtonElm.click();
 	 }
 		
 	 @Then("^user gets a invalid credential message$")
 	 public void user_gets_invalid_credential_message() throws TimeoutException {
-	 String message = login.wrongCredentialsErrorMessageElm.getText();
-	 Assert.assertEquals("Invalid Email or Password", message);
+		 String message = login.wrongCredentialsErrorMessageElm.getText();
+		 Assert.assertEquals("Invalid Email or Password", message);
 	 }
 }

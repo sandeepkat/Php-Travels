@@ -4,6 +4,11 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
 public class PersonalDetailsPage extends PagesInitialization {
+	
+	/*
+	 * Define a unique element of a page, useful to verify that the user is one
+	 * personal details page
+	 */
 
 	@FindBy(xpath = "//*[@id='guestform']/div[1]/div[2]/input")
 	public WebElement firstNameTxtElm;

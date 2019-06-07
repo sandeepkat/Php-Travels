@@ -14,18 +14,18 @@ public class LoginPageNoPasswordTestSteps {
 	
 	 @Given("^user is on Login Page$")
 	 public void user_is_on_login_page()  throws TimeoutException {
-			 login.navigateToLoginPage();
+		 login.navigateToLoginPage();
 	 }
 	
 	 @When("^user enters valid username on login page and clicks on login button$")
 	 public void user_enters_valid_username_and_no_password_click_on_login_button()  throws TimeoutException {
-	 login.emailIdElm.sendKeys(PhpTravelsGlobal.USER_NAME);
-	 login.logInButtonElm.click();
+		 login.emailIdElm.sendKeys(PhpTravelsGlobal.USER_NAME);
+		 login.logInButtonElm.click();
 	 }
 
 	 @Then("^user gets a invalid username or password message$")
 	 public void user_gets_invalid_username_or_password_message()  throws TimeoutException {
-	 String message = login.wrongCredentialsErrorMessageElm.getText();
-	 Assert.assertEquals("Invalid Email or Password", message);
+		 String message = login.wrongCredentialsErrorMessageElm.getText();
+		 Assert.assertEquals("Invalid Email or Password", message);
 	 }
 }

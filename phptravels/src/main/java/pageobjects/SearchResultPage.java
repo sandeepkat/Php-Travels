@@ -7,6 +7,11 @@ import org.openqa.selenium.support.FindBy;
 
 public class SearchResultPage extends PagesInitialization{
 	
+	/*
+	 * Define a unique element of a page, useful to verify that the user is on
+	 * search result page
+	 */
+	
 	@FindBy(css = "div.col-md-9.col-xs-12 > div.row > div > table > tbody > tr")
 	public List<WebElement> searchResultsList;
 	

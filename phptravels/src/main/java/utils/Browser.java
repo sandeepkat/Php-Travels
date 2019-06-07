@@ -14,20 +14,24 @@ public class Browser extends Global{
 	private static Browser browser;
 	private static WebDriver driver;
 	
+	// To get browser instance
 	public static Browser getBrowser() {
 		return browser;
 	}
 	
+	// To set browser instance
 	public static void setBrowser(Browser browser) {
 		Browser.browser = browser;
 	}
 	
+	// To set driver instance
 	public void setDriver(WebDriver driver) {
 		Browser.driver = driver;
 		Browser.driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 	}
 
+	//To quit driver instance
 	public static void quitDriver() {
 		if (driver != null) {
 			driver.quit();
@@ -70,7 +74,6 @@ public class Browser extends Global{
 	}
 	
 	public static void open(String url) throws TimeoutException {
-//		driver.manage ().timeouts().pageLoadTimeout(10, TimeUnit.SECONDS);
 		getDriver().get(url);	
 	}
 
@@ -85,16 +88,4 @@ public class Browser extends Global{
 			e.printStackTrace();
 		}
 	}
-	/*
-	 * This method is useful to find whether element exists on the page within given time
-	 * 
-	 */
-//	public static boolean elementExists(By by, int seconds) {
-//		try {
-//			(new WebDriverWait(getDriver(), seconds)).until(ExpectedConditions.visibilityOfElementLocated((by)));
-//			return true;
-//		} catch (TimeoutException ignored) {
-//		}
-//		return false;
-//	}
 }
