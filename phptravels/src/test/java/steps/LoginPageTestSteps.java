@@ -27,7 +27,7 @@ public class LoginPageTestSteps{
 	 @When("^the user clicks on login button$")
 	 public void user_clicks_on_login_button()  throws TimeoutException {
 		 login.logInButtonElm.click();
-		// Browser.sleep(8000);
+		 Browser.sleep(5000);
 	 }
 		
 	 @Then("^user is landed on the home page$")
