@@ -22,7 +22,7 @@ public class LandingPage extends PagesInitialization {
 	@FindBy(css = "ul.nav.navbar-nav.go-right > li:nth-child(2) > a")
 	public WebElement offersElm;
 	
-	@FindBy(css = "div.collapse.navbar-collapse li#li_myaccount > a")
+	@FindBy(xpath = "/html/body/nav/div/div[2]/ul[2]/ul/li[1]/a")
 	public WebElement myAccountElm;
 	    
 	@FindBy(css = "div.collapse.navbar-collapse li#li_myaccount > ul > li:nth-child(1) > a")
