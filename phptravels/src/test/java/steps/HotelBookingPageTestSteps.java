@@ -59,13 +59,13 @@ public class HotelBookingPageTestSteps {
 	
 	@When("^user enters personal details and clicks on confirm booking button$")
 	public void the_user_enters_personal_details_clicks_confirm_booking_button() throws TimeoutException {
-//		personal_details_page.firstNameTxtElm.sendKeys(PhpTravelsGlobal.FIRST_NAME);
-//		personal_details_page.lastNameTxtElm.sendKeys(PhpTravelsGlobal.LAST_NAME);
-//		personal_details_page.emailTxtElm.sendKeys(PhpTravelsGlobal.EMAIL);
-//		personal_details_page.emailConfirmTxtElm.sendKeys(PhpTravelsGlobal.EMAIL);
-//		personal_details_page.countryElm.click();
-//		personal_details_page.countryElm.sendKeys(PhpTravelsGlobal.COUNTRY_NAME);
-//		personal_details_page.countrySpecificElm.click();
+		personal_details_page.firstNameTxtElm.sendKeys(PhpTravelsGlobal.FIRST_NAME);
+		personal_details_page.lastNameTxtElm.sendKeys(PhpTravelsGlobal.LAST_NAME);
+		personal_details_page.emailTxtElm.sendKeys(PhpTravelsGlobal.EMAIL);
+		personal_details_page.emailConfirmTxtElm.sendKeys(PhpTravelsGlobal.EMAIL);
+		personal_details_page.countryElm.click();
+		personal_details_page.countryElm.sendKeys(PhpTravelsGlobal.COUNTRY_NAME);
+		personal_details_page.countrySpecificElm.click();
 		WebDriver driver = Browser.getDriver();
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		js.executeScript("arguments[0].scrollIntoView();", personal_details_page.confirmBookingBtnElm);

@@ -26,7 +26,7 @@ public class PersonalDetailsPage extends PagesInitialization {
 	@FindBy(xpath = "//*[@id='select2-drop']/ul/li/div")
 	public WebElement countrySpecificElm;
 	
-	@FindBy(xpath = "//*[@id='body-section']/div/div[1]/div/div[1]/div/div[4]/button")
+	@FindBy(xpath = "//*[@id='body-section']/div/div/div[1]/div/div[1]/div[2]/div[4]/button")
 	public WebElement confirmBookingBtnElm;
 		
 }

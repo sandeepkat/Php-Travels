@@ -36,6 +36,5 @@ public class LandingPage extends PagesInitialization {
 	
 	@FindBy(xpath = "//*[@id='body-section']/div[5]/div/div/h2")
 	public WebElement landingPageTextElm;
-	
-		
+			
 }

@@ -16,7 +16,7 @@ import utils.Browser;
 			monochrome = true, 									 //display the console output in a proper readable format
 			strict = false, 									 //it will check if any step is not defined in step definition file
 			dryRun = false, 								   	//to check the mapping is proper between feature file and step def file
-			tags = {"@EndToEnd"}			
+			tags = {"@Functional"}			
 			)
 		 
 	public class RunTest {
